@@ -30,19 +30,21 @@
       rel="icon"
       type="image/png"
       href="images/icon/favicon-96x96.png"
-      sizes="96x96" />
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="images/icon/favicon.svg" />
     <link rel="shortcut icon" href="images/icon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="images/icon/apple-touch-icon.png" />
+      href="images/icon/apple-touch-icon.png"
+    />
     <link rel="manifest" href="images/icon/site.webmanifest" />
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- js -->
-     <script src="js/main.js"></script>
-     <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
   </head>
   <body>
     <!-- 모달창(팝업창) -->
@@ -62,6 +64,17 @@
         </div>
       </div>
     </div>
+    <!-- fix메뉴 -->
+     <div class="fix-menu-wrap">
+      <a href="#" class="chat-btn">
+        <img src="images/chat-btn.png" alt="chat">
+        <span>무엇을 도와드릴까요?</span>
+      </a>
+      <a href="#" class="shop-btn">STX</a>
+      <a href="#" class="top-btn">
+        <img src="images/top-btn.png" alt="top-btn" class="top-btn-img">
+      </a>
+     </div>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 상단 -->
@@ -89,10 +102,9 @@
                   <li><a href="#">찾아오시는길</a></li>
                 </ul>
               </li>
-
               <!-- ul>li*5>a[href=#]{메뉴$} -->
               <li>
-                <a href="#">사업분야</a>
+                <a href="#news">사업분야</a>
                 <ul class="depth2">
                   <li><a href="#">건축사업</a></li>
                   <li><a href="#">주택사업</a></li>
@@ -158,11 +170,13 @@
           <span class="visual-txt"
             >세계최고를 향해 STX건설이 힘차게 질주합니다!</span
           >
-          <button class="visual-btn"><a href="#bb">버튼</a></button>
+          <a href="#cs">
+            <button class="visual-btn">버튼</button>
+          </a>
         </div>
       </section>
       <!-- 비즈니스 -->
-      <section class="business">
+      <section class="business" id="business">
         <div class="business-inner container">
           <!-- 비즈니스 상단 -->
           <div class="business-top">
@@ -189,7 +203,7 @@
         </div>
       </section>
       <!-- 뉴스 -->
-      <section class="news">
+      <section class="news" id="news">
         <!-- 배경색 -->
         <div class="news-bg"></div>
         <div class="news-inner container">
@@ -258,7 +272,7 @@
         </div>
       </section>
       <!-- 고객센터 -->
-      <section class="cs">
+      <section class="cs" id="cs">
         <div class="cs-inner container">
           <!-- faq -->
           <a href="#" class="cs-link">
